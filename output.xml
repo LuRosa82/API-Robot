@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-28T14:43:12.280708" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="c:\projetos\API\Academy Suits\test\login.robot">
+<test id="s1-t1" name="CT01 - Obter Token de Acesso" line="7">
+<kw name="Create API Session" owner="recursos">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-06-28T14:43:12.736954" level="INFO">${headers} = {'accept': 'application/json', 'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>accept=application/json</arg>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-06-28T14:43:12.735952" elapsed="0.001992"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-06-28T14:43:12.739450" level="INFO">Creating Session using : alias=APISuits, url=https://Suits.qacoders-academy.com.br, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=APISuits</arg>
+<arg>url=https://Suits.qacoders-academy.com.br</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-06-28T14:43:12.739450" elapsed="0.000000"/>
+</kw>
+<kw name="headers=${headers}">
+<msg time="2024-06-28T14:43:12.742453" level="FAIL">No keyword with name 'headers=${headers}' found. Did you try using keyword 'RequestsLibrary.HEAD' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-06-28T14:43:12.742453" elapsed="0.002003">No keyword with name 'headers=${headers}' found. Did you try using keyword 'RequestsLibrary.HEAD' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-06-28T14:43:12.734943" elapsed="0.009513">No keyword with name 'headers=${headers}' found. Did you try using keyword 'RequestsLibrary.HEAD' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Login de acesso" owner="recursos">
+<status status="NOT RUN" start="2024-06-28T14:43:12.745718" elapsed="0.001001"/>
+</kw>
+<kw name="Validar o token e gravar em um header de autorização" owner="recursos">
+<status status="NOT RUN" start="2024-06-28T14:43:12.747719" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2024-06-28T14:43:12.734943" elapsed="0.014776">No keyword with name 'headers=${headers}' found. Did you try using keyword 'RequestsLibrary.HEAD' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-06-28T14:43:12.284760" elapsed="0.467960"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
