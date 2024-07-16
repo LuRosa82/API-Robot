@@ -34,7 +34,7 @@ Squad Suits
 ### Clone o projeto
  
 ```jsx
-git clone git@github.com:LuRosa82/API-Academy.robot.git
+git clone git@github.com:LuRosa82/Academy-Suits.robot.git
 ```
  
 ### Entre no diretorio
